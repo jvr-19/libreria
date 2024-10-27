@@ -1,0 +1,51 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as JavierRR from "./javierrr.stories.tsx";
+
+<Meta of={JavierRR} title="JavierRR" />
+
+# JavierRR
+
+Este componente permite mostrar texto con un color y variante de tipografía personalizable.
+
+#### Texto por defecto
+
+<Canvas of={JavierRR.Default} />
+
+## Usage
+
+```tsx
+import {JavierRR} from 'milibreria';
+
+function Example(){
+    return (
+        <JavierRR
+            text="Texto de ejemplo"
+            txtcolor="red"
+            variant="h4"
+        />
+    );
+};
+export default Example;
+```
+
+#### Texto primario
+
+<Canvas of={JavierRR.Primary} />
+
+## Usage
+
+```tsx
+import {JavierRR} from 'milibreria';
+
+function Example(){
+    return (
+        <JavierRR
+            text="Texto primario"
+            txtcolor="green"
+            variant="h6"
+        />
+    );
+};
+export default Example;
+```
